@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div id="head">
+        <a id="link" href="#"><span id="burger"></span></a>
+        <ul class="list-unstyled">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Projet</a></li>
+            <li><a href="#">A Propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <h1 style="color:white;text-align: center;">Portfolio</h1>
+
+
+    <div id="acceuil">
+        <div id="presAcceuil">
+            <h1>Mathieu Khadim Anoman</h1>
+            <h2>Etudiant en Informatique</h2>
+            <h3>Bienvenue</h3>
+        </div>
+        <div id="imgAcceuil">
+            <img src="images/img1.jpg" alt="" id="imagePrincipale">
+        </div>
+    </div>
+    <div id="projet">
+        <h1 style="color: white;text-align:center;">Projets</h1>
+        <div class="centerBox">
+
+            <div class="categoryWrapper">
+                <h1>Save Life</h1>
+                <button>
+                <span>
+                  <span>
+                    <span data-attr-span="Go to project">
+                      Go to project
+                    </span>
+                  </span>
+                </span>
+              </button>
+            </div>
+        </div>
+        <div class="centerBox">
+
+            <div class="categoryWrapper">
+                <h1>CodiApp</h1>
+                <button>
+                <span>
+                  <span>
+                    <span data-attr-span="Go to project">
+                      Go to project
+                    </span>
+                  </span>
+                </span>
+              </button>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        let link = document.getElementById('link')
+        let burger = document.getElementById('burger')
+        let ul = document.querySelector('ul')
+
+        /* gestionnaire d'événement sur le a#link pour venir changer l'attribution de la classe .open à la ul et au span#burger */
+        link.addEventListener('click', function(e) {
+            e.preventDefault()
+            burger.classList.toggle('open')
+            ul.classList.toggle('open')
+        })
+    </script>
+</body>
+
+</html>
