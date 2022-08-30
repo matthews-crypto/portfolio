@@ -13,63 +13,40 @@
 </head>
 
 <body>
-    <!-- pour le background -->
-    <div class="stars">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
+    <!-- ***************************pour le background********************** -->
+    <div class="context">
+        <img src="images/saly.png" id="imageAcceuil" alt="" width=45%>
+        <h1 id="venue"></h1>
+        <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+        <script>
+            new TypeIt("#venue", {
+                strings: ["Hello.", "I'm Mathieu Khadim.", "Bienvenue"],
+                speed: 80,
+                waitUntilVisible: true,
+            }).go();
+        </script>
+
     </div>
-    <!-- fin de la pluie d etoile -->
+
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- ****************************fin de background************************* -->
+
+    <!-- *******************navbar************************ -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portfolio</a>
+            <a class="navbar-brand" href="#">Acceuil</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -79,15 +56,20 @@
                         <a class="nav-link" href="#acceuils">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projets">projet</a>
+                        <a class="nav-link" href="projet.html">projet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">A propos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- *******************End navbar************************ -->
 
+    <!-- ***********************acceuil******************************* -->
     <div id="acceuils" class="d-flex justify-content-around align-content-center">
-        <div class="card" style="width:400px">
+        <!-- <div class="card" style="width:400px">
             <img class="card-img-top" src="images/img1.jpg" alt="Card image" style="width:100%">
             <div class="card-body">
                 <h4 class="card-title">Mathieu Khadim Anoman</h4>
@@ -96,56 +78,25 @@
                 </p>
                 <a href="#apropos" class="btn btn-info">A propos</a>
             </div>
-        </div>
+        </div> -->
     </div>
+    <!-- ************************end acceuil*************************** -->
 
-    <div id="projets">
-        <h1 style="color: white; text-align: center">Projets</h1>
-        <div class="d-flex flex-wrap justify-content-around">
-            <div class="centerBox">
-                <div class="categoryWrapper">
-                    <h1>CODI App</h1>
-                    <button onclick="window.open('https://app-codi.herokuapp.com/?source=pwa')">
-              <span>
-                <span>
-                  <span data-attr-span="Go to project"> Go to project </span>
-                </span>
-              </span>
-            </button>
-                </div>
-            </div>
-            <div class="centerBox">
-                <div class="categoryWrapper">
-                    <h1>Save Life</h1>
-                    <button onclick="window.open('https://app-codi.herokuapp.com/?source=pwa')">
-            <span>
-              <span>
-                <span data-attr-span="Go to project"> Go to project </span>
-              </span>
-            </span>
-          </button>
-                </div>
-            </div>
-            <div class="centerBox">
-                <div class="categoryWrapper">
-                    <h1>Champion Quest</h1>
-                    <button onclick="window.open('https://app-codi.herokuapp.com/?source=pwa')">
-          <span>
-            <span>
-              <span data-attr-span="Go to project"> Go to project </span>
-            </span>
-          </span>
-        </button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- ******************************projet************************** -->
+
+    <!-- *************************end projet***************************** -->
     <script>
+        //animation back-end
         document.querySelector('.first-button').addEventListener('click', function() {
 
             document.querySelector('.animated-icon1').classList.toggle('open');
         });
+        //end animation back-end
+        // animation du typeIt
+
+        //fin animation typeIt
     </script>
+
 </body>
 
 </html>
